@@ -18,7 +18,7 @@ conn = sqlite3.connect('dipastel.db')
 c = conn.cursor()
 
 #photoimage====================
-image = PhotoImage(file = 'C:\\Users\Dinopc\Desktop\DiPastel\logotipo-Tio-Di.gif')
+image = PhotoImage(file = 'images\logotipo-Tio-Di.gif')
 image= image.subsample(2, 2)
 
 lb = Label(image=image)
@@ -114,7 +114,7 @@ def addbtt():
 
 
 #Addbtt
-img = PhotoImage(file = 'C:\\Users\Dinopc\Desktop\DiPastel\plussign.gif')
+img = PhotoImage(file = 'images\plussign.gif')
 img = img.subsample(30,30)
 addbtt= Button (root,image = img , width = 40, command = addbtt, bd = '0')
 addbtt.grid(row=2, column= 8)
@@ -1111,12 +1111,6 @@ def NovoUser():
 
 
     cod_value.trace('w',  LimitCharacters(cod_value))
-
-
-
-
-
-
 
 
 menu_login = Menu(menu)
